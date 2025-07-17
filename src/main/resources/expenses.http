@@ -1,0 +1,28 @@
+###
+GET http://localhost:8080/api/expense
+
+###
+GET http://localhost:8080/api/expense/{{id}}
+
+###
+POST http://localhost:8080/api/expense
+Content-Type: application/json
+
+{
+  "description": "macdonalds",
+  "category": "FOOD",
+  "amount": 10
+}
+
+###
+GET http://localhost:8080/api/expense/filter
+Content-Type: application/json
+
+{
+  "date": "2025-07-16",
+  "category": "INCOME",
+  "description": "something"
+}
+
+###
+DELETE http://localhost:8080/api/expense/{{id}}
