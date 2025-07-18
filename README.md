@@ -1,7 +1,6 @@
 # 📊 Kotlin Spring Boot – Expenses Tracker API
 
-A simple RESTful API to track income and expenses, built with **Kotlin** and **Spring Boot**. This project is ideal for developers transitioning from Java to Kotlin and looking to get hands-on with backend development using modern Kotlin practices.
-
+A simple RESTful API to track income and expenses, built with **Kotlin** and **Spring Boot**.
 ---
 
 ## 🚀 Features
