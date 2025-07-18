@@ -16,9 +16,12 @@ class ExpenseController(private val expenseService: ExpenseService) {
     fun getExpensesFiltered(@RequestBody filters: Map<String, Any>) =
         expenseService.getExpensesFiltered(filters)
 
-
     @PostMapping
     fun addExpense(@RequestBody expense: Expense) = expenseService.saveExpense(expense)
+
+    @PutMapping
+    fun editExpense(@RequestBody expense: Expense) =
+        expenseService.editExpense(expense)
 
     @DeleteMapping("/{id}")
     fun deleteExpense(@PathVariable id: Long) = expenseService.deleteExpense(id)

@@ -8,7 +8,7 @@ import java.time.LocalDate
 class Expense(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    var id: Long? = null,
+    var id: Long,
     var description: String,
     var category: Category? = Category.OTHERS,
     var amount: Int,
