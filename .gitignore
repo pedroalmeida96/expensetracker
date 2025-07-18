@@ -1,7 +1,7 @@
 HELP.md
 .gradle
 build/
-data/expensedb.mv.db
+data/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
